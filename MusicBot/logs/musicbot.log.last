@@ -1,0 +1,70 @@
+[49.006938934] 2018-05-14 21:38:03,721 - INFO - launcher: Starting sanity checks
+[49.006938934] 2018-05-14 21:38:03,721 - INFO - launcher: Checking for Python 3.5+
+[50.002098083] 2018-05-14 21:38:03,722 - INFO - launcher: Checking console encoding
+[50.002098083] 2018-05-14 21:38:03,722 - INFO - launcher: Setting console encoding to UTF-8
+[50.002098083] 2018-05-14 21:38:03,722 - INFO - launcher: Ensuring we're in the right environment
+[53.003549576] 2018-05-14 21:38:03,725 - INFO - launcher: Adding local bins/ folder to path
+[54.012060165] 2018-05-14 21:38:03,726 - INFO - launcher: Required checks passed.
+[55.013418198] 2018-05-14 21:38:03,727 - INFO - launcher: Optional checks passed.
+[55.513620377] 2018-05-14 21:38:03,727 - INFO - launcher: Moving old musicbot log
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[1.6344168186187744] 2018-05-14 21:38:05,306 - WARNING - musicbot.config | In config.py::MainThread(11764), line 112 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[1.6344168186187744] 2018-05-14 21:38:05,306 - INFO - musicbot.config | In config.py::MainThread(11764), line 123 in run_checks: Using i18n: config/i18n/en.json
+[1.6394152641296387] 2018-05-14 21:38:05,311 - DEBUG - musicbot.json | In json.py::MainThread(11764), line 8 in __init__: Init JSON obj with config/i18n/en.json
+[2.1455254554748535] 2018-05-14 21:38:05,817 - DEBUG - musicbot.bot | In bot.py::MainThread(11764), line 227 in _setup_logging: Set logging level to INFO
+[2.1455254554748535] 2018-05-14 21:38:05,817 - INFO - musicbot.bot | In bot.py::MainThread(11764), line 84 in __init__: Starting MusicBot 1.9.7
+[2.1465260982513428] 2018-05-14 21:38:05,818 - WARNING - musicbot.bot | In bot.py::MainThread(11764), line 87 in __init__: Autoplaylist is empty, disabling.
+[56.183688879] launcher-ERROR: Error starting bot
+Traceback (most recent call last):
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 601, in _create_direct_connection
+    local_addr=self._local_addr)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 778, in create_connection
+    raise exceptions[0]
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 765, in create_connection
+    yield from self.sock_connect(sock, address)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\asyncio\selector_events.py", line 450, in sock_connect
+    return (yield from fut)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\asyncio\selector_events.py", line 480, in _sock_connect_cb
+    raise OSError(err, 'Connect call failed %s' % (address,))
+TimeoutError: [Errno 10060] Connect call failed ('104.16.59.5', 443)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 304, in connect
+    yield from self._create_connection(req)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 578, in _create_connection
+    transport, proto = yield from self._create_direct_connection(req)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 624, in _create_direct_connection
+    (req.host, req.port, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10060] Can not connect to discordapp.com:443 [Connect call failed ('104.16.59.5', 443)]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "run.py", line 353, in main
+    m.run()
+  File "C:\Users\Hector\MusicBot\musicbot\bot.py", line 1024, in run
+    self.loop.run_until_complete(self.start(*self.config.auth))
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\asyncio\base_events.py", line 468, in run_until_complete
+    return future.result()
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\client.py", line 490, in start
+    yield from self.login(*args, **kwargs)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\client.py", line 416, in login
+    yield from getattr(self, '_login_' + str(n))(*args, **kwargs)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\client.py", line 346, in _login_1
+    data = yield from self.http.static_login(token, bot=is_bot)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\http.py", line 258, in static_login
+    data = yield from self.request(Route('GET', '/users/@me'))
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\discord\http.py", line 137, in request
+    r = yield from self.session.request(method, url, **kwargs)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 555, in __iter__
+    resp = yield from self._coro
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\client.py", line 198, in _request
+    conn = yield from self._connector.connect(req)
+  File "C:\Users\Hector\AppData\Local\Programs\Python\Python36\lib\site-packages\aiohttp\connector.py", line 314, in connect
+    .format(key, exc.strerror)) from exc
+aiohttp.errors.ClientOSError: [Errno 10060] Cannot connect to host discordapp.com:443 ssl:True [Can not connect to discordapp.com:443 [Connect call failed ('104.16.59.5', 443)]]
+[56.200689554] launcher-INFO: All done.

@@ -1,0 +1,63 @@
+[47.511100769] 2018-05-14 21:53:17,843 - INFO - launcher: Starting sanity checks
+[48.511743546] 2018-05-14 21:53:17,844 - INFO - launcher: Checking for Python 3.5+
+[48.511743546] 2018-05-14 21:53:17,844 - INFO - launcher: Checking console encoding
+[49.016952515] 2018-05-14 21:53:17,844 - INFO - launcher: Setting console encoding to UTF-8
+[49.016952515] 2018-05-14 21:53:17,844 - INFO - launcher: Ensuring we're in the right environment
+[51.513195038] 2018-05-14 21:53:17,847 - INFO - launcher: Adding local bins/ folder to path
+[53.017139435] 2018-05-14 21:53:17,848 - INFO - launcher: Required checks passed.
+[63.024997711] 2018-05-14 21:53:17,858 - INFO - launcher: Optional checks passed.
+[63.024997711] 2018-05-14 21:53:17,858 - INFO - launcher: Moving old musicbot log
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[1.6694319248199463] 2018-05-14 21:53:19,465 - WARNING - musicbot.config | In config.py::MainThread(11684), line 112 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[1.6694319248199463] 2018-05-14 21:53:19,465 - INFO - musicbot.config | In config.py::MainThread(11684), line 123 in run_checks: Using i18n: config/i18n/en.json
+[1.6754336357116699] 2018-05-14 21:53:19,471 - DEBUG - musicbot.json | In json.py::MainThread(11684), line 8 in __init__: Init JSON obj with config/i18n/en.json
+[2.1965670585632324] 2018-05-14 21:53:19,992 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 227 in _setup_logging: Set logging level to INFO
+[2.1965670585632324] 2018-05-14 21:53:19,992 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 84 in __init__: Starting MusicBot 1.9.7
+[2.1975665092468262] 2018-05-14 21:53:19,993 - WARNING - musicbot.bot | In bot.py::MainThread(11684), line 87 in __init__: Autoplaylist is empty, disabling.
+[16.2543096542358398] 2018-05-14 21:53:34,049 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 1074 in on_ready: Connection established, ready to go.
+[16.2543096542358398] 2018-05-14 21:53:34,049 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 339 in _cache_app_info: Caching app info
+[16.4393467903137207] 2018-05-14 21:53:34,235 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 889 in _scheck_ensure_env: Ensuring data folders exist
+[16.4483473300933838] 2018-05-14 21:53:34,244 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 905 in _scheck_server_permissions: Checking server permissions
+[16.4483473300933838] 2018-05-14 21:53:34,244 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 909 in _scheck_autoplaylist: Auditing autoplaylist
+[16.4493479728698730] 2018-05-14 21:53:34,245 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 913 in _scheck_configs: Validating config
+[16.4493479728698730] 2018-05-14 21:53:34,245 - DEBUG - musicbot.config | In config.py::MainThread(11684), line 212 in async_validate: Validating options...
+[16.4493479728698730] 2018-05-14 21:53:34,245 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 916 in _scheck_configs: Validating permissions config
+[16.4493479728698730] 2018-05-14 21:53:34,245 - DEBUG - musicbot.permissions | In permissions.py::MainThread(11684), line 64 in async_validate: Validating permissions...
+[16.4503505229949951] 2018-05-14 21:53:34,246 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1091 in on_ready: Connected: 437706523582398464/Hector's Bot#7939
+[16.4513549804687500] 2018-05-14 21:53:34,247 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1099 in on_ready: Owner:     344436733846355978/Hector#7715
+
+[16.4523510932922363] 2018-05-14 21:53:34,248 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1102 in on_ready: Server List:
+[16.4523510932922363] 2018-05-14 21:53:34,248 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1105 in on_ready:  - Force&Savke Army
+[16.4533469676971436] 2018-05-14 21:53:34,249 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1105 in on_ready:  - Develop Testing Server
+[16.4543495178222656] 2018-05-14 21:53:34,250 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1151 in on_ready: Not bound to any text channels
+[16.4543495178222656] 2018-05-14 21:53:34,250 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 1177 in on_ready: Not autojoining any voice channels
+[39.7316820621490479] 2018-05-14 21:53:57,527 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 2938 in on_voice_state_update: Voice state update for 344436733846355978/Hector#7715 on Develop Testing Server/Music Room -> [CONNECT, MUTE]
+[44.5206856727600098] 2018-05-14 21:54:02,316 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 2734 in on_message: 344436733846355978/Hector#7715: !summon
+[44.5226893424987793] 2018-05-14 21:54:02,318 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 2019 in cmd_summon: Joining Develop Testing Server/Music Room
+[44.5236883163452148] 2018-05-14 21:54:02,319 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 452 in get_voice_client: Connection attempt 1 to Music Room
+[44.5236883163452148] 2018-05-14 21:54:02,319 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 391 in join_voice_channel: (join_voice_channel) creating futures
+[44.5246908664703369] 2018-05-14 21:54:02,320 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 397 in join_voice_channel: (join_voice_channel) setting voice state
+[44.5256903171539307] 2018-05-14 21:54:02,321 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 400 in join_voice_channel: (join_voice_channel) waiting for session id
+[50.4917626380920410] 2018-05-14 21:54:08,287 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 2938 in on_voice_state_update: Voice state update for 437706523582398464/Hector's Bot#7939 on Develop Testing Server/Music Room -> [JOIN, CONNECT]
+[50.4927632808685303] 2018-05-14 21:54:08,288 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 2949 in on_voice_state_update: 437706523582398464/Hector's Bot#7939 has joined Develop Testing Server/Music Room
+[50.4937622547149658] 2018-05-14 21:54:08,289 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 404 in join_voice_channel: (join_voice_channel) waiting for voice data
+[50.4947669506072998] 2018-05-14 21:54:08,290 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 418 in join_voice_channel: (join_voice_channel) connecting...
+[51.4001545906066895] 2018-05-14 21:54:09,195 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 430 in join_voice_channel: (join_voice_channel) connection successful
+[51.4006547927856445] 2018-05-14 21:54:09,196 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 478 in get_voice_client: Connected in 6.9s
+[51.4006547927856445] 2018-05-14 21:54:09,196 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 479 in get_voice_client: Connected to Develop Testing Server/Music Room
+[51.4031589031219482] 2018-05-14 21:54:09,198 - VOICEDEBUG - musicbot.player | In player.py::MainThread(11684), line 373 in websocket_check: Starting websocket check loop for Develop Testing Server
+[60.2395122051239014] 2018-05-14 21:54:18,035 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 2734 in on_message: 344436733846355978/Hector#7715: !Play Frenkie Tupakamaru
+[60.3780298233032227] 2018-05-14 21:54:18,173 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 2938 in on_voice_state_update: Voice state update for 422088562586943489/Jazzmyne#9341 on Develop Testing Server/Music Room -> [JOIN, CONNECT]
+[60.3785357475280762] 2018-05-14 21:54:18,174 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 2949 in on_voice_state_update: 422088562586943489/Jazzmyne#9341 has joined Develop Testing Server/Music Room
+[61.3541538715362549] 2018-05-14 21:54:19,149 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 1517 in cmd_play: {'_type': 'url', 'url': 'ytsearch:Frenkie Tupakamaru', 'ie_key': None, 'extractor': 'generic', 'webpage_url': 'Frenkie Tupakamaru', 'webpage_url_basename': 'Frenkie Tupakamaru', 'extractor_key': 'Generic'}
+[71.9993743896484375] 2018-05-14 21:54:29,795 - VOICEDEBUG - musicbot.bot | In bot.py::MainThread(11684), line 2938 in on_voice_state_update: Voice state update for 422088562586943489/Jazzmyne#9341 on Develop Testing Server/BOT CHANNEL -> [LEAVE, MOVE]
+[71.9998757839202881] 2018-05-14 21:54:29,795 - INFO - musicbot.bot | In bot.py::MainThread(11684), line 2949 in on_voice_state_update: 422088562586943489/Jazzmyne#9341 has left Develop Testing Server/Music Room
+[83.8358831405639648] 2018-05-14 21:54:41,631 - DEBUG - musicbot.entry | In entry.py::MainThread(11684), line 54 in get_ready_future: Created future for None
+[83.8378846645355225] 2018-05-14 21:54:41,633 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 825 in serialize_queue: Serializing queue for 430075565362380811
+[83.8488860130310059] 2018-05-14 21:54:41,644 - INFO - musicbot.entry | In entry.py::MainThread(11684), line 220 in _really_download: Download started: https://www.youtube.com/watch?v=MZRzt0x_Xtk
+[85.8471422195434570] 2018-05-14 21:54:43,642 - DEBUG - musicbot.entry | In entry.py::MainThread(11684), line 54 in get_ready_future: Created future for None
+[106.0224130153656006] 2018-05-14 21:55:03,818 - INFO - musicbot.entry | In entry.py::MainThread(11684), line 230 in _really_download: Download complete: https://www.youtube.com/watch?v=MZRzt0x_Xtk
+[106.0299134254455566] 2018-05-14 21:55:03,825 - FFMPEG - musicbot.player | In player.py::MainThread(11684), line 330 in _play: Creating player with options: -nostdin -vn audio_cache\youtube-MZRzt0x_Xtk-Frenkie_Kontra_Indigo_-_Tupakamaru.webm
+[106.5379781723022461] 2018-05-14 21:55:04,333 - DEBUG - musicbot.bot | In bot.py::MainThread(11684), line 825 in serialize_queue: Serializing queue for 430075565362380811
